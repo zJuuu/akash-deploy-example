@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   web:
-    image: ovrclk/lunie-light
+    image: akashlytics/hello-akash-world:0.2.0
     expose:
       - port: 3000
         as: 80
@@ -15,22 +15,20 @@ profiles:
     web:
       resources:
         cpu:
-          units: 0.1
+          units: 0.5
         memory:
-          size: 512Mi
+          size: 1Gi
         storage:
-          size: 512Mi
+          size: 2Gi
   placement:
-    westcoast:
-      attributes:
-        host: akash
+    dcloud:
       pricing:
-        web: 
+        web:
           denom: uakt
           amount: 1000
 
 deployment:
   web:
-    westcoast:
+    dcloud:
       profile: web
       count: 1
