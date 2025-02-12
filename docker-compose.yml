@@ -8,6 +8,3 @@ services:
         AKASH_ACCOUNT_ADDRESS: your_account_address
     env_file:
       - .env
-    ports:
-      - 26657:26657
-      - 1317:1317

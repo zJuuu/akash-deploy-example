@@ -29,7 +29,7 @@ This project provides a streamlined way to deploy applications to the Akash Netw
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/zJuuu/akash-deploy-example>
+   git clone https://github.com/zJuuu/akash-deploy-example
    cd akash-cli-deploy
    ```
 
